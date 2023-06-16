@@ -8,8 +8,4 @@
 
 user_email = "elissa1327@gmail.com"
 user = User.where(email: user_email).first_or_initialize
-
-puts "Enter a password for user #{user_email}:"
-password = $stdin.gets.chomp
-
-user.update!(password: password, password_confirmation: password)
+user.update!(password: 'Medway1234', password_confirmation: "Medway1234")
